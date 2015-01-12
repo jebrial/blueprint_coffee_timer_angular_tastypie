@@ -5,7 +5,12 @@
 </head>
 <body ng-controller="TimerController">
 
-  <h2>{{test}}</h2>
+  <span>{{minutes}} : {{seconds}}</span>
+
+
+    <button type="button" data-ng-click="timer_reset()">Reset</button>
+    <button type="button" data-ng-click="timer_stop()">Stop</button>
+    <button type="button" data-ng-click="timer()">Start</button>
   <script type="text/javascript" src="js/lib/jquery/dist/jquery.js"></script>
   <script type="text/javascript" src="js/lib/angular/angular.js"></script>
   <script type="text/javascript" src="js/lib/angular-resource/angular-resource.js"></script>

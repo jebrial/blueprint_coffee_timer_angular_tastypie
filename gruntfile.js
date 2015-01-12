@@ -94,14 +94,14 @@ module.exports = function(grunt) {
         },
         watch: {
             jsWatch: {
-                files: ['../js/**/*.js'],
+                files: ['frontend/src/js/**/*.js'],
                 tasks: ['jshint','karma:dev:start','concat','uglify'],
                 options: {
                     livereload: true
                 }
             },
             cssWatch: {
-                files: ['../scss/**/*.scss'],
+                files: ['frontend/src/scss/**/*.scss'],
                 tasks: ['sass', 'cssmin'],
                 options: {
                     livereload: true
@@ -114,7 +114,7 @@ module.exports = function(grunt) {
     require('load-grunt-tasks')(grunt);
 
     grunt.registerTask('default', ['jshint', 'karma:dev:start', 'concat', 'uglify', /*, 'sass'*/]);
-    grunt.registerTask('background', ['jshint', 'karma:dev:start', 'concat', 'uglify', /*, 'sass'*/ 'watch']);
+    grunt.registerTask('bg', ['jshint', 'karma:dev:start', 'concat', 'uglify', /*, 'sass'*/ 'watch']);
     grunt.registerTask('css', ['sass', 'cssmin']);
     grunt.registerTask('ng', ['jshint', 'karma:ci:start', 'concat', 'uglify', 'sass', 'cssmin', 'watch']);
 };
