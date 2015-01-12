@@ -3,3 +3,4 @@ tests/log/*
 .DS_Store
 frontend/public/js/*
 frontend/public/css/*
+!frontend/public/js/tasty

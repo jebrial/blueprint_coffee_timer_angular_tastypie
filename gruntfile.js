@@ -24,7 +24,7 @@ module.exports = function(grunt) {
             },
             ng: {
                 src: [
-                    'frontend/src/shared/iifeopen.js',
+                    'frontend/src/js/shared/iifeopen.js',
                     'frontend/src/js/app.js',
                     'frontend/src/js/modules/*.js',
                     'frontend/src/js/shared/iifeclose.js'
@@ -38,7 +38,7 @@ module.exports = function(grunt) {
                 compress: false,
                 report:'min'
             },
-            retail_qna : {
+            blueprint : {
                 files: {
                     'frontend/public/js/app.min.js': ['<%= concat.ng.dest %>']
                 }
@@ -70,12 +70,14 @@ module.exports = function(grunt) {
                 background:true,
                 singleRun: false,
                 files: [
-                    'frontend/tests/js/jquery.min.js',
+                    'frontend/tests/js/utils/jquery.min.js',
                     'frontend/public/js/lib/angular/angular.js',
                     'frontend/public/js/lib/angular-resource/angular-resource.js',
                     'frontend/public/js/lib/angular-animate/angular-animate.js',
                     'frontend/public/js/lib/angular-mocks/angular-mocks.js',
-                    'frontend/js/src/**/*.js',
+                    'frontend/public/js/tasty/angular-resource-tastypie.js',
+                    'frontend/src/js/app.js',
+                    'frontend/src/js/modules/*.js',
                     'frontend/tests/js/modules/*.js'
                 ]
             },
