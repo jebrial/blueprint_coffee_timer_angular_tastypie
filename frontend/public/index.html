@@ -1,17 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html >
 <head>
-  <title>Test</title>
+  <title>Blueprint Coffee</title>
+  <link href="js/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/simple.css" rel="stylesheet">
 </head>
-<body ng-controller="TimerController">
+<body ng-controller="TimerController" ng-cloak>
+  <div class="container">
 
-  <span>{{minutes}} : {{seconds}}</span>
+    <div class="bp-timer">
+      <span class=" lead counter">{{minutes}} : {{seconds}}</span><br/>
+      <div class="bp-timer-controls">
+        <button type="button" class="btn btn-default" data-ng-click="timer_reset()">Reset</button>
+        <button type="button" class="btn btn-default"data-ng-click="timer_stop()">Stop</button>
+        <button type="button" class="btn btn-default" data-ng-click="timer()">Start</button><br/>
+      </div>
+      <img class="" src="images/logo@2x.png" alt="blueprint coffee">
+    </div>
 
+  </div>
 
-    <button type="button" data-ng-click="timer_reset()">Reset</button>
-    <button type="button" data-ng-click="timer_stop()">Stop</button>
-    <button type="button" data-ng-click="timer()">Start</button>
   <script type="text/javascript" src="js/lib/jquery/dist/jquery.js"></script>
+  <script src="js/lib/bootstrap/dist/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="js/lib/angular/angular.js"></script>
   <script type="text/javascript" src="js/lib/angular-resource/angular-resource.js"></script>
   <script type="text/javascript" src="js/lib/angular-animate/angular-animate.js"></script>
