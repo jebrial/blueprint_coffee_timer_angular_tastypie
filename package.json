@@ -1,0 +1,35 @@
+{
+  "name": "blueprint_coffee_timer",
+  "version": "1.0.0",
+  "description": "A blueprint themed coffee timer built with ANgularJS and Tastypie",
+  "dependencies": {
+    "grunt": "latest"
+  },
+  "scripts": {
+    "postinstall": "bower install --config.interactive=false"
+  },
+  "devDependencies": {
+    "bower": "latest",
+    "grunt": "latest",
+    "grunt-contrib-cssmin": "latest",
+    "grunt-contrib-jshint": "latest",
+    "grunt-contrib-sass": "latest",
+    "grunt-contrib-watch": "latest",
+    "grunt-contrib-concat": "latest",
+    "grunt-contrib-uglify": "latest",
+    "grunt-ng-annotate": "latest",
+    "grunt-karma": "latest",
+    "karma": "0.12.25",
+    "karma-chrome-launcher": "latest",
+    "karma-coffee-preprocessor": "latest",
+    "karma-coverage": "0.2.6",
+    "karma-firefox-launcher": "latest",
+    "karma-html2js-preprocessor": "latest",
+    "karma-jasmine": "latest",
+    "karma-phantomjs-launcher": "latest",
+    "karma-safari-launcher": "latest",
+    "karma-script-launcher": "latest",
+    "latest": "latest",
+    "load-grunt-tasks": "latest"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "blueprint_coffee_timer",
+  "version": "1.0",
+  "description": "Angular dependencies for blueprint_coffee_timer",
+  "dependencies": {
+    "angular": "latest",
+    "angular-resource": "latest",
+    "angular-animate": "latest",
+    "angular-mocks": "latest",
+    "jquery" : "latest"
+  }
+}
