@@ -1,0 +1,17 @@
+body{
+padding-top: 50px;
+font-family: Helvetica, Arial, sans-serf;
+background-color: #0093B7;
+}
+.counter {
+  color: white;
+  font-size: 600%;
+}
+
+.bp-timer {
+  padding: 40px 15px;
+  text-align: center;
+}
+.bp-timer-controls {
+  margin-bottom: 60px;
+}

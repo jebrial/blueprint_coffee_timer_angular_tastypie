@@ -4,3 +4,4 @@ tests/log/*
 frontend/public/js/*
 frontend/public/css/*
 !frontend/public/js/tasty
+!frontend/public/css/simple.css
